@@ -10,9 +10,6 @@
 </head>
 
 <body>
-  <p>Math can be inline like \(2^{2x}=4\), or displayed like:</p>
-  \[2^{3x}=8\]
-   
   <h1> Computational Linear Algebra </h1>
   <h2> Midsem Solutions: Feb 2024</h2>
 
@@ -38,11 +35,11 @@
     <p>5. For the given vector \( V= (v1, v2, v3)\), transform it to   \(V'= (v2, v3, v1) \). Is this a linear transformation? If yes, find the transformation matrix T. <br>
     Answer: Yes.
    \(
-    \begin{matrix}
+    \begin{bmatrix}
     0 & 0 & 1 \cr
     1 & 0 & 0 \cr
     0 & 1 & 0
-    \end{matrix}
+    \end{bmatrix}
     \)
     </p>
 
@@ -54,14 +51,14 @@
     7. Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
     <ol type="a">
     <li>  \( T(v_1,v_2) = (v_1+2v_2, v_2-v_1) \) </li>
-    <li> \( T (v1 , v2 ) = (|v1 |, |v2 |) /) </li>
+    <li> \( T (v1 , v2 ) = (|v1 |, |v2 |) \) </li>
   </ol>
 
   Answer: a.  \(
-  \begin{matrix}
+  \begin{bmatrix}
   1 & 2 \cr
   -1 & 1
-  \end{matrix}\) <br>
+  \end{bmatrix}\) <br>
   
   b. not a linear transformation
   \(T(1,1) + T(-1,-1) = (2,2), but T((1, 1)+ (-1,-1) = (0,0) \)
@@ -84,10 +81,10 @@
   \(2x-9y+5z= 1\)
  </p>
 
-    <p>9. Let \(C = \begin{matrix}
+    <p>9. Let \(C = \begin{bmatrix}
       1 & -1 \cr
        -1 & 1
-  \end{matrix}\). Compute \(C^{k}, k > 0\) <br>
+  \end{bmatrix}\). Compute \(C^{k}, k > 0\) <br>
 
   Answer: \(C^k=2^{k-1}C\)
   </p>
