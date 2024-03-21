@@ -51,11 +51,61 @@
     </p>
 
     <p>
-    Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
+    7. Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
     <ol type="a">
     <li>  \( T(v_1,v_2) = (v_1+2v_2, v_2-v_1) \) </li>
     <li> \( T (v1 , v2 ) = (|v1 |, |v2 |) /) </li>
   </ol>
+
+  Answer: a.  \(
+  \begin{matrix}
+  1 & 2 \cr
+  -1 & 1
+  \end{matrix}\) <br>
+  
+  b. not a linear transformation
+  \(T(1,1) + T(-1,-1) = (2,2), but T((1, 1)+ (-1,-1) = (0,0) \)
+  
+  </p>
+
+  <p>8. Three points A, B, and C lie on a plane in \(\Reals^3\). The coordinates of these points are:
+    \(
+    A: (1, 2, 3)
+    B: (-1, 1, 2)
+    C: (2, 0, -1)
+    \)
+    Find the equation of atleast one plane which has all these points on the plane. Equation of a plane is of the form 
+    \( ax+by+cz=d\) <br>
+  Answer: Solve this linear system of equations<br>
+  \(a+2b+3c+d=0\) <br>
+  \(-a+b+c+d=0\) <br>
+  \(2a+c+d=0\) <br>
+  \(a = 2d  b = -9d  c = 5d\)<br>
+  \(2x-9y+5z= 1\)
+ </p>
+
+    <p>9. Let \(C = \begin{matrix}
+      1 & -1 \cr
+       -1 & 1
+  \end{matrix}\). Compute \(C^{k}, k > 0\) <br>
+
+  Answer: \(C^k=2^{k-1}C\)
+  </p>
+
+  <p>10.   Let \(v,w \in \Reals^{n}\). If \(v.w = k(\| v + w \|^{2} - \| v - w\|^{2})\). 
+    What is \(k\) ? <br>
+    Answer: \(k=1/4\)
+  </p>
+
+  <p>11. Prove or Disprove: If \(W_1\) and \(W_2\) are two subspaces of a vector space V, 
+    then \(W_1 \cap W_2\) is also a subspace of V . <br>
+     Answer: This is true. To prove show \(W_1 \cap W_2\) is closed under addition and scalar multiplication. 
+     Consider 2 vectors f and g in \(W_1 \cap W_2\). We have to show \(f + g \in W_1 \cap W_2\) AND \(\lambda f \in W_1 \cap W_2\). 
+     Since \(W_1 \cap W_2 \subset W_1\), and \(W_1\) is a subspace, \(f + g \in W_1\) and  \(\lambda f \in W_1\). 
+     Similarly, since \(W_1 \cap W_2 \subset W_2\), and \(W_2\) is a subspace, 
+     we know that \(f + g \in W_2\) and \(\lambda f \in W_2\). So \(f + g \in W_1 \subset W_2$ and also $\lambda f \in W_1 \cap W_2\). 
+     This shows that \(W_1 \cap W_2\) is closed under addition and scalar multiplication, so it is a subspace of V .
+      
   </p>
 </body>
 
