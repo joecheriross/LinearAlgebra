@@ -8,21 +8,21 @@
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
   
+ <style>
+   body {
+      user-select: none;
+   }
+ </style>
  <style type="text/css" media="print">
-   BODY {display:none;visibility:hidden;}
-   .unselectable {
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        color: #cc0000;
-      }
+   body {
+      display:none;
+      visibility:hidden;
+    }
+   
  </style>
  
 </head>
-<div class="unselectable">
-<body oncopy="return false" oncut="return false" onpaste="return false">
+<body>
   
   <h1> Computational Linear Algebra </h1>
   <h2> Midsem Solutions: Feb 2024</h2>
@@ -118,7 +118,6 @@
      This shows that \(W_1 \cap W_2\) is closed under addition and scalar multiplication, so it is a subspace of V .
       
   </p>
-</div>
 </body>
 
 </html>
