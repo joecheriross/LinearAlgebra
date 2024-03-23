@@ -10,10 +10,18 @@
   
  <style type="text/css" media="print">
    BODY {display:none;visibility:hidden;}
+   .unselectable {
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #cc0000;
+      }
  </style>
  
 </head>
-
+<div class="unselectable">
 <body oncopy="return false" oncut="return false" onpaste="return false">
   
   <h1> Computational Linear Algebra </h1>
@@ -110,7 +118,7 @@
      This shows that \(W_1 \cap W_2\) is closed under addition and scalar multiplication, so it is a subspace of V .
       
   </p>
-
+</div>
 </body>
 
 </html>
