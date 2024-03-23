@@ -27,18 +27,18 @@
   <h1> Computational Linear Algebra </h1>
   <h2> Midsem Solutions: Feb 2024</h2>
 
-  <p> 1. What is vector P in the following figure? Explain your answer (in less than 10 words) <br>
+  <p> <b>1.</b> What is vector P in the following figure? Explain your answer (in less than 10 words) <br>
    Answer: \(W-V\)
   </p>
 
-  <p> 2. Prove  dot product  of  vectors is distributive   \(V·(W + X) = V·W + V·X\) <br>
+  <p> <b>2.</b> Prove  dot product  of  vectors is distributive   \(V·(W + X) = V·W + V·X\) <br>
   Answer: Discussed in the class </p>
 
-  <p>3. Prove: If \( V,W \in \Reals^n\)  are unit vectors, then \(\vert V.W \vert \leq 1 \) <br>
+  <p><b>3</b> Prove: If \( V,W \in \Reals^n\)  are unit vectors, then \(\vert V.W \vert \leq 1 \) <br>
      Answer: use Cauchy-Schwarz inequality \(\vert V.W\vert \leq \|V\| \|W\|\)
   </p>
 
-  <p>4.  Let  \(V, W \in \Reals^n \) be vectors that are orthogonal to each other. Prove that   \( \|V+W\|^2 =\|V\|^2 + \|W\|^2 \)<br>
+  <p><b>4.</b>  Let  \(V, W \in \Reals^n \) be vectors that are orthogonal to each other. Prove that   \( \|V+W\|^2 =\|V\|^2 + \|W\|^2 \)<br>
 
     Answer:   
     \(\|V+W\|^2= (V+W).(V+W)\) <br>
@@ -46,7 +46,7 @@
     \(= \|V\|^2 + \|W\|^2 \) Since V and W are orthogonal to each other \(V.W =0\)
     </p>
 
-    <p>5. For the given vector \( V= (v1, v2, v3)\), transform it to   \(V'= (v2, v3, v1) \). Is this a linear transformation? If yes, find the transformation matrix T. <br>
+    <p><b>5.</b> For the given vector \( V= (v1, v2, v3)\), transform it to   \(V'= (v2, v3, v1) \). Is this a linear transformation? If yes, find the transformation matrix T. <br>
     Answer: Yes.
    \(
     \begin{bmatrix}
@@ -57,12 +57,12 @@
     \)
     </p>
 
-    <p> 6. Prove \( (AB)^T = B^TA^T \) <br> 
+    <p> <b>6.</b> Prove \( (AB)^T = B^TA^T \) <br> 
     Answer: As discussed in the class.
     </p>
 
     <p>
-    7. Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
+      <b>7.</b> Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
     <ol type="a">
     <li>  \( T(v_1,v_2) = (v_1+2v_2, v_2-v_1) \) </li>
     <li> \( T (v1 , v2 ) = (|v1 |, |v2 |) \) </li>
@@ -79,14 +79,14 @@
   
   </p>
 
-  <p>8. Three points A, B, and C lie on a plane in \(\Reals^3\). The coordinates of these points are:
+  <p><b>8.</b> Three points A, B, and C lie on a plane in \(\Reals^3\). The coordinates of these points are:
     \(
     A: (1, 2, 3)
     B: (-1, 1, 2)
     C: (2, 0, -1)
     \)
-    Find the equation of atleast one plane which has all these points on the plane. Equation of a plane is of the form 
-    \( ax+by+cz=d\) <br>
+    Find the equation of the plane which has all these points on the plane. Equation of a plane is of the form 
+    \(ax+by+cz=d\) <br>
   Answer: Solve this linear system of equations<br>
   \(a+2b+3c-d=0\) <br>
   \(-a+b+2c-d=0\) <br>
@@ -95,7 +95,7 @@
   \(-2x+9y-5z= 1\)
  </p>
 
-    <p>9. Let \(C = \begin{bmatrix}
+    <p><b>9.</b> Let \(C = \begin{bmatrix}
       1 & -1 \cr
        -1 & 1
   \end{bmatrix}\). Compute \(C^{k}, k > 0\) <br>
@@ -103,12 +103,12 @@
   Answer: \(C^k=2^{k-1}C\)
   </p>
 
-  <p>10.   Let \(v,w \in \Reals^{n}\). If \(v.w = k(\| v + w \|^{2} - \| v - w\|^{2})\). 
+  <p><b>10.</b>   Let \(v,w \in \Reals^{n}\). If \(v.w = k(\| v + w \|^{2} - \| v - w\|^{2})\). 
     What is \(k\) ? <br>
     Answer: \(k=1/4\)
   </p>
 
-  <p>11. Prove or Disprove: If \(W_1\) and \(W_2\) are two subspaces of a vector space V, 
+  <p><b>11.</b> Prove or Disprove: If \(W_1\) and \(W_2\) are two subspaces of a vector space V, 
     then \(W_1 \cap W_2\) is also a subspace of V . <br>
      Answer: This is true. To prove show \(W_1 \cap W_2\) is closed under addition and scalar multiplication. 
      Consider 2 vectors f and g in \(W_1 \cap W_2\). We have to show \(f + g \in W_1 \cap W_2\) AND \(\lambda f \in W_1 \cap W_2\). 
