@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Midsem solution</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+  
+ <style>
+   body {
+      user-select: none;
+   }
+ </style>
+ <style type="text/css" media="print">
+   body {
+      display:none;
+      visibility:hidden;
+    }
+   
+ </style>
+ 
+</head>
+<body>
+  
+  <h1> Statistical Foundations of Data Science </h1>
+  <h2> Midsem Solutions: Feb 2025</h2>
+
+  <p> <b>1.</b> What is vector P in the following figure? Explain your answer (in less than 10 words) <br>
+   Answer: \(W-V\)
+  </p>
+
+  <p> <b>2.</b> Prove  dot product  of  vectors is distributive   \(V·(W + X) = V·W + V·X\) <br>
+  Answer: Discussed in the class </p>
+
+  <p><b>3</b> Prove: If \( V,W \in \Reals^n\)  are unit vectors, then \(\vert V.W \vert \leq 1 \) <br>
+     Answer: use Cauchy-Schwarz inequality \(\vert V.W\vert \leq \|V\| \|W\|\)
+  </p>
+
+  <p><b>4.</b>  Let  \(V, W \in \Reals^n \) be vectors that are orthogonal to each other. Prove that   \( \|V+W\|^2 =\|V\|^2 + \|W\|^2 \)<br>
+
+    Answer:   
+    \(\|V+W\|^2= (V+W).(V+W)\) <br>
+    \(= (V.V) + 2(V.W) + (W.W)\) <br>
+    \(= \|V\|^2 + \|W\|^2 \) Since V and W are orthogonal to each other \(V.W =0\)
+    </p>
+
+    <p><b>5.</b> For the given vector \( V= (v1, v2, v3)\), transform it to   \(V'= (v2, v3, v1) \). Is this a linear transformation? If yes, find the transformation matrix T. <br>
+    Answer: Yes.
+   \(
+    \begin{bmatrix}
+    0 & 1 & 0\cr
+    0 & 0 & 1\cr
+    1 & 0 & 0
+    \end{bmatrix}
+    \)
+    </p>
+
+    <p> <b>6.</b> Prove \( (AB)^T = B^TA^T \) <br> 
+    Answer: As discussed in the class.
+    </p>
+
+    <p>
+      <b>7.</b> Check whether the following transformations are linear transformations. Justify your answer. Find the transformation matrix if it is a linear transformation.
+    <ol type="a">
+    <li>  \( T(v_1,v_2) = (v_1+2v_2, v_2-v_1) \) </li>
+    <li> \( T (v1 , v2 ) = (|v1 |, |v2 |) \) </li>
+  </ol>
+
+  Answer: a.  \(
+  \begin{bmatrix}
+  1 & 2 \cr
+  -1 & 1
+  \end{bmatrix}\) <br>
+  
+  b. not a linear transformation
+  \(T(1,1) + T(-1,-1) = (2,2), but T((1, 1)+ (-1,-1) = (0,0) \)
+  
+  </p>
+
+  <p><b>8.</b> Three points A, B, and C lie on a plane in \(\Reals^3\). The coordinates of these points are:
+    \(
+    A: (1, 2, 3)
+    B: (-1, 1, 2)
+    C: (2, 0, -1)
+    \)
+    Find the equation of the plane which has all these points on the plane. Equation of a plane is of the form 
+    \(ax+by+cz=d\) <br>
+  Answer: Solve this linear system of equations<br>
+  \(a+2b+3c-d=0\) <br>
+  \(-a+b+2c-d=0\) <br>
+  \(2a-c-d=0\) <br>
+  \(a = -2d  b = 9d  c = -5d\)<br>
+  \(-2x+9y-5z= 1\)
+ </p>
+
+    <p><b>9.</b> Let \(C = \begin{bmatrix}
+      1 & -1 \cr
+       -1 & 1
+  \end{bmatrix}\). Compute \(C^{k}, k > 0\) <br>
+
+  Answer: \(C^k=2^{k-1}C\)
+  </p>
+
+  <p><b>10.</b>   Let \(v,w \in \Reals^{n}\). If \(v.w = k(\| v + w \|^{2} - \| v - w\|^{2})\). 
+    What is \(k\) ? <br>
+    Answer: \(k=1/4\)
+  </p>
+
+  <p><b>11.</b> Prove or Disprove: If \(W_1\) and \(W_2\) are two subspaces of a vector space V, 
+    then \(W_1 \cap W_2\) is also a subspace of V . <br>
+     Answer: This is true. To prove show \(W_1 \cap W_2\) is closed under addition and scalar multiplication. 
+     Consider 2 vectors f and g in \(W_1 \cap W_2\). We have to show \(f + g \in W_1 \cap W_2\) AND \(\lambda f \in W_1 \cap W_2\). 
+     Since \(W_1 \cap W_2 \subset W_1\), and \(W_1\) is a subspace, \(f + g \in W_1\) and  \(\lambda f \in W_1\). 
+     Similarly, since \(W_1 \cap W_2 \subset W_2\), and \(W_2\) is a subspace, 
+     we know that \(f + g \in W_2\) and \(\lambda f \in W_2\). So \(f + g \in W_1 \cap W_2\) and also \(\lambda f \in W_1 \cap W_2\). 
+     This shows that \(W_1 \cap W_2\) is closed under addition and scalar multiplication, so it is a subspace of V .
+      
+  </p>
+</body>
+
+</html>
